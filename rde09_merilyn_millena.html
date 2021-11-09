@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDE09 - Multimídias</title>
+</head>
+<body>
+    <h1>Incorporando Multimídias ao site</h1>
+    <h2>Tag Iframe</h2>
+    <p>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web. </p>
+
+    <h3>INCORPORAR UM SITE DENTRO DE OUTRO SITE: </h3>
+    <iframe src="http://irati.ifpr.edu.br" height=300 width=565 ></iframe>
+
+    <h3>Embutir áudio no site</h3>
+    <iframe width="30%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258954353&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nirvana" title="Nirvana" target="_blank" style="color: #cccccc; text-decoration: none;">Nirvana</a> · <a href="https://soundcloud.com/nirvana/come-as-you-are" title="Come As You Are" target="_blank" style="color: #cccccc; text-decoration: none;">Come As You Are</a></div>
+
+    <h3> Incorporar vídeos ao site </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Tag vídeo</h2>
+    <p> É usado para mostrar um vídeo em uma página da web. Vindo da própria máquina.</p>
+    <video poster="Vídeos/Bike.jpg" controls>
+    <source src="Vídeos/_Bike.mp4" type= "videos/mp4" >
+    <source src="Vídeos/Bike.webm" type= "video/webm">
+    <source src="Vídeos/Bike.ogv" type="videos/ogv">
+    </video>
+
+    <h2>Tag de audio </h2>
+    <p> Tag de áudio é usado para reproduzir um arquivo de áudio em uma página da web.</p>
+    <audio preload="metadata" controls>
+    <Source src= "Audios/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+    <source src="Audios/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+    <source src="Audios/Hey-Sailor-Letter-Box.wav" type="audio/wav">
+    </audio>
+
+    <h2>Tag pictures</h2>
+    <p>Tag para agrupar várias imagens em uma página da web.</p>
+    <picture>
+        <source media="(max-width : 500px)" srcset="img/bike_110.jpg">
+        <source media="(max-width : 700px)" srcset="img/bike_320.jpg">
+        <source media="(max-width : 1000px)" srcset="img/bike_640.jpg">
+        <img src="img/bike_full.jpg" alt="Mtb Por-Do-Sol">
+    </picture>
+</body>
+</html>
